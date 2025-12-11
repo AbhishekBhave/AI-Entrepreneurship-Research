@@ -1,7 +1,9 @@
 import csv, time, requests, sys, json
 from typing import List, Dict, Optional
+import os
 
-API_KEY = "4096bc83cf155a0e85a37a4b350a16c1"
+# API key should be set as environment variable: CRUNCHBASE_API_KEY
+API_KEY = os.getenv("CRUNCHBASE_API_KEY", "YOUR_API_KEY_HERE")
 URL = f"https://api.crunchbase.com/v4/data/searches/organizations?user_key={API_KEY}"
 
 # Financial field IDs - using only verified available fields

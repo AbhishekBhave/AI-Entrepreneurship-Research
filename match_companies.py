@@ -15,10 +15,9 @@ def preprocess_text(text):
     return text
 
 def main():
-    # Paths
-    # Using absolute paths based on workspace structure
-    cb_path = "/Users/abhishekbhave/Downloads/Name Matching/samplecrunchbase3.csv"
-    pb_path = "/Users/abhishekbhave/Downloads/Name Matching/samplepitchbook3.csv"
+    # Paths - modify these to point to your input files
+    cb_path = "samplecrunchbase3.csv"  # Crunchbase master data file
+    pb_path = "samplepitchbook3.csv"   # Pitchbook data to match
     output_path = "matched_sample.csv"
 
     print("Loading data...", flush=True)
